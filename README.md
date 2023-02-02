@@ -15,7 +15,9 @@ The mean weight of bean type A, $\mu_A$ is 5 grams and the standard deviation, $
 
 Our classifier $C_T(x)$ is determined by a weight threshold $T$:
 
-$$f\_T(x) = \left\{ \begin{array}{ll} -1 & x \leq T \\ 1  & T < x \\\end{array} \right.$$
+$$f\_T(x) = -1 \mbox{ if } x \leq T $$
+
+$$f\_T(x) = 1  \mbox{ if } T < x  .$$
 
 The [*Bayes error*](https://en.wikipedia.org/wiki/Bayes_error_rate) is the probability that we will misclassify. Assume  that there are equally many beans of each type (no prior).
 
